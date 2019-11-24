@@ -19,3 +19,5 @@ class ChainUtil {
         return ec.keyFromPublic(publicKey, 'hex').verify(dataHash, signature);
     }
 }
+
+module.exports = ChainUtil;
