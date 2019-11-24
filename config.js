@@ -1,0 +1,1 @@
+const DIFFICULTY = 3;
