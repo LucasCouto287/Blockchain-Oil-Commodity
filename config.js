@@ -4,3 +4,4 @@ const DIFFICULTY = 3;
 const MINE_RATE = 3000;
 //This mine rate will try and maintain a rate of 1 block mined every 3000 milliseconds 
 //by dynamically changing the difficulty in response to amount of blocks mined
+const INITIAL_BALANCE  = 500;
