@@ -7,3 +7,7 @@ const MINE_RATE = 3000;
 const INITIAL_BALANCE  = 500;
 //Roughly 1000 coins is equivalent to a barrel of oil 
 //This balance here is for demonstrations sake, real users would start with a balance of 0
+const MINING_REWARD = 10;
+//This variable reward for mining transactions into blocks can be lowered or raised as needed
+
+//The transaction fee would be initialized here
