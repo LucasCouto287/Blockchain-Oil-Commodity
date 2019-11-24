@@ -11,3 +11,5 @@ const MINING_REWARD = 10;
 //This variable reward for mining transactions into blocks can be lowered or raised as needed
 
 //The transaction fee would be initialized here
+
+module.exports = { DIFFICULTY, MINE_RATE, INITIAL_BALANCE, MINING_REWARD };
