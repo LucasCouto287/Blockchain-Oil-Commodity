@@ -34,3 +34,6 @@ app.get('/mine-transactions', (req,res) => {
     console.log(`New block added ${block.toString()}`);
     res.redirect('/blocks');
 });
+
+//Show the user's public-key value
+app.get('/public-key', (req, res) => {
