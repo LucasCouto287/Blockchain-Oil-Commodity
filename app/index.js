@@ -22,3 +22,6 @@ app.use(bodyParser.json());
 app.get('/blocks', (req,res) => {
  res.json(bc.chain);
 });
+
+//Shows the user's copy of the unmined transaction pool
+app.get('/transactions', (req, res) => {
