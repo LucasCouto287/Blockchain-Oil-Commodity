@@ -37,3 +37,5 @@ app.get('/mine-transactions', (req,res) => {
 
 //Show the user's public-key value
 app.get('/public-key', (req, res) => {
+ res.json({publicKey: wallet.publicKey});
+});
