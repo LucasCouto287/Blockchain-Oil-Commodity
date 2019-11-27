@@ -20,3 +20,5 @@ app.use(bodyParser.json());
 
 //Shows the user's full copy of the blockchain
 app.get('/blocks', (req,res) => {
+ res.json(bc.chain);
+});
