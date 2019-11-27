@@ -27,3 +27,6 @@ app.get('/blocks', (req,res) => {
 app.get('/transactions', (req, res) => {
   res.json(tp.transactions);
   });
+
+//Add the cryptocurrency transactions onto the blockchain
+app.get('/mine-transactions', (req,res) => {
