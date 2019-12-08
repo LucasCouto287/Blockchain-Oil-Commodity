@@ -14,8 +14,6 @@ const tp = new TransactionPool();
 const p2pServer = new P2pServer(bc, tp);
 const miner = new Miner(bc, tp, wallet, p2pServer);
 
-//This class creates all of the endpoints for users to interact with the blockchain
-
 app.use(bodyParser.json());
 
  
