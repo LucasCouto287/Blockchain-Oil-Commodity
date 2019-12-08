@@ -31,16 +31,14 @@ app.get('/transactions', (req, res) => {
 //Add the cryptocurrency transactions onto the blockchain
 app.get('/mine-transactions', (req,res) => {
  const block = miner.mine();
-    console.log(`New block added ${block.toString()}`);
-    res.redirect('/blocks');
-});
+   
 
 //Show the user's public-key value
 app.get('/public-key', (req, res) => {
 //  res.json({publicKey: wallet.publicKey});
-// });
+ });
 
 //Shows the user's wallet balance
 app.get('/balance', (req, res) => {
      res.json({balance: wallet.calculateBalance(bc)});
-// });
+ });
