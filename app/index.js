@@ -19,9 +19,9 @@ const miner = new Miner(bc, tp, wallet, p2pServer);
 app.use(bodyParser.json());
 
 //Shows the user's full copy of the blockchain
-app.get('/blocks', (req,res) => {
- res.json(bc.chain);
-});
+
+//  res.json(bc.chain);
+// });
 
 //Shows the user's copy of the unmined transaction pool
 app.get('/transactions', (req, res) => {
