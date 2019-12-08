@@ -30,9 +30,9 @@ app.get('/transactions', (req, res) => {
 
 //Add the cryptocurrency transactions onto the blockchain
 
-  //  console.log(`New block added ${block.toString()}`);
-  //  res.redirect('/blocks');
-// });
+   console.log(`New block added ${block.toString()}`);
+    res.redirect('/blocks');
+ });
 
 //Show the user's public-key value
 app.get('/public-key', (req, res) => {
