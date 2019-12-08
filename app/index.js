@@ -42,5 +42,4 @@ app.get('/public-key', (req, res) => {
 
 //Shows the user's wallet balance
 app.get('/balance', (req, res) => {
-    res.json({balance: wallet.calculateBalance(bc)});
-});
+
