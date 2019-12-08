@@ -29,7 +29,8 @@ app.get('/transactions', (req, res) => {
   });
 
 //Add the cryptocurrency transactions onto the blockchain
-
+app.get('/mine-transactions', (req,res) => {
+ const block = miner.mine();
    console.log(`New block added ${block.toString()}`);
     res.redirect('/blocks');
  });
