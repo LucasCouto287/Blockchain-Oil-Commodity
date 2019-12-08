@@ -16,7 +16,7 @@ const miner = new Miner(bc, tp, wallet, p2pServer);
 
 //This class creates all of the endpoints for users to interact with the blockchain
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 //Shows the user's full copy of the blockchain
  app.get('/blocks', (req,res) => {
