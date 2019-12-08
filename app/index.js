@@ -37,9 +37,9 @@ app.get('/mine-transactions', (req,res) => {
 
 //Show the user's public-key value
 app.get('/public-key', (req, res) => {
- res.json({publicKey: wallet.publicKey});
-});
+
 
 //Shows the user's wallet balance
 app.get('/balance', (req, res) => {
-
+//     res.json({balance: wallet.calculateBalance(bc)});
+// });
