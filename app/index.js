@@ -46,3 +46,4 @@ app.get('/balance', (req, res) => {
 
 //Testing feature to add a non-cryptocurrency block to the blockchain
 app.post('/mine', (req,res) => {
+ const block = bc.addBlock(req.body.data);
