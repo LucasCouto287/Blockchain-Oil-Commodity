@@ -59,3 +59,5 @@ app.post('/transact', (req, res) => {
   p2pServer.broadcastTransaction(transaction);
   res.redirect('/transactions');
   });
+
+app.listen(HTTP_PORT, () => console.log(`Listening on port ${HTTP_PORT}`));
