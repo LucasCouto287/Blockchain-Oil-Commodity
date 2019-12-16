@@ -54,3 +54,4 @@ app.post('/mine', (req,res) => {
 
 //Adds a new cryptocurrency transaction to the transaction pool
 app.post('/transact', (req, res) => {
+ const { recipient, amount } = req.body;
