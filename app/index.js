@@ -51,3 +51,5 @@ app.post('/mine', (req,res) => {
  p2pServer.syncChains();
   res.redirect('/blocks');
 });
+
+//Adds a new cryptocurrency transaction to the transaction pool
