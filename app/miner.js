@@ -29,3 +29,4 @@ class Miner {
  return block;
     }
 }
+module.exports = Miner;
