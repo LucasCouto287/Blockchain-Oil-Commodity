@@ -33,3 +33,7 @@ Difficulty: ${this.difficulty}
   }
 
     static mineBlock(lastBlock, data) {
+ let hash, timestamp; 
+      const lastHash = lastBlock.hash;
+      let { difficulty } = lastBlock;
+      let nonce = 0;
