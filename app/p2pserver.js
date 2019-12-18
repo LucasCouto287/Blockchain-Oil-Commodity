@@ -61,3 +61,8 @@ class P2pServer {
 
     //This method sends the blockchain through a socket and gets it to new users
     sendChain(socket){
+  socket.send(JSON.stringify({
+            type: MESSAGE_TYPES.chain,
+            chain: this.blockchain.chain
+        }));
+    }
