@@ -26,3 +26,5 @@ class P2pServer {
 
  //As peers connect, they get their own socket and then this socket is connected
     connectToPeers() {
+  peers.forEach(peer => {
+        const socket = new Websocket(peer);
