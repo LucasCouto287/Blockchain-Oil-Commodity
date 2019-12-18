@@ -16,3 +16,7 @@ class Block {
     this.difficulty = difficulty || DIFFICULTY;
  
   }
+
+  
+  toString() {
+      return `Block - 
