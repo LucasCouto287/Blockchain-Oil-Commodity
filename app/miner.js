@@ -22,3 +22,4 @@ class Miner {
  validTransactions.push(
   Transaction.rewardTransaction(this.wallet, Wallet.blockchainWallet())
         );
+  const block = this.blockchain.addBlock(validTransactions);
