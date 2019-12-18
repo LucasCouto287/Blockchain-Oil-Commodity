@@ -31,3 +31,6 @@ class P2pServer {
    socket.on('open', () => this.connectSocket(socket));
         });
     }
+
+ //Conecting the socket adds it onto an array of the users and sends the user the blockchain
+    connectSocket(socket) {
