@@ -15,3 +15,6 @@ class P2pServer {
         this.transactionPool = transactionPool;
   this.sockets = [];
     }
+
+  listen() {
+        const server = new Websocket.Server({ port: P2P_PORT });
