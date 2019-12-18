@@ -16,3 +16,6 @@ class Miner {
     //Synchronizes blockchains between all other peers
     //Clears transaction pool
     //Broadcasts to every miner to clear their transaction pool
+
+     mine() {
+        const validTransactions = this.transactionPool.validTransactions();
