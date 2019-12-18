@@ -27,3 +27,5 @@ class Block {
 Difficulty: ${this.difficulty}
       Data      : ${this.data}`;
   }
+
+   static genesis() {
