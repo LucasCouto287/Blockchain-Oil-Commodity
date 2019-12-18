@@ -48,3 +48,5 @@ Difficulty: ${this.difficulty}
    return new this(timestamp, lastHash, hash, data, nonce, difficulty);
   }
 static hash(timestamp, lastHash, data, nonce, difficulty) {
+return ChainUtil.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toString();
+  }
