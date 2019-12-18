@@ -31,3 +31,5 @@ Difficulty: ${this.difficulty}
    static genesis() {
    return new this('Genesis time', '-----', 'theGenesisBlock', [], 0, DIFFICULTY);
   }
+
+    static mineBlock(lastBlock, data) {
