@@ -66,3 +66,5 @@ class P2pServer {
             chain: this.blockchain.chain
         }));
     }
+ sendTransaction(socket, transaction){
+        socket.send(JSON.stringify({
