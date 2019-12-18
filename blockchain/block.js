@@ -24,3 +24,6 @@ class Block {
       Last Hash : ${this.lastHash.substring(0,10)}
  Hash      : ${this.hash.substring(0,10)}
       Nonce     : ${this.nonce}
+Difficulty: ${this.difficulty}
+      Data      : ${this.data}`;
+  }
