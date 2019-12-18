@@ -72,3 +72,6 @@ class P2pServer {
             transaction
         }));
     }
+   syncChains() {
+        this.sockets.forEach(socket => this.sendChain(socket));
+    }
