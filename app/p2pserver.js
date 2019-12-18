@@ -49,3 +49,6 @@ class P2pServer {
   case MESSAGE_TYPES.chain:
                   this.blockchain.replaceChain(data.chain);
                   break;
+                case MESSAGE_TYPES.transaction:
+                  this.transactionPool.updateOrAddTransaction(data.transaction);
+                  break;
