@@ -75,3 +75,6 @@ class P2pServer {
    syncChains() {
         this.sockets.forEach(socket => this.sendChain(socket));
     }
+    broadcastTransaction(transaction){
+        this.sockets.forEach(socket => this.sendTransaction(socket, transaction));
+    }
