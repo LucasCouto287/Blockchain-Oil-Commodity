@@ -43,3 +43,6 @@ class P2pServer {
 
  //This method executes the appropriate action for the respective message received
     messageHandler(socket){
+ socket.on('message', message => {
+            const data = JSON.parse(message);
+            switch(data.type) {
