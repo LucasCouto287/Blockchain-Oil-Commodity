@@ -19,3 +19,4 @@ class Miner {
 
      mine() {
         const validTransactions = this.transactionPool.validTransactions();
+ validTransactions.push(
