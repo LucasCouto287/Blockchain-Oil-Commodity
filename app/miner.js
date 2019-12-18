@@ -23,3 +23,4 @@ class Miner {
   Transaction.rewardTransaction(this.wallet, Wallet.blockchainWallet())
         );
   const block = this.blockchain.addBlock(validTransactions);
+  this.p2pServer.syncChains();
