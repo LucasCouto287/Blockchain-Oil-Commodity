@@ -22,3 +22,5 @@ class Block {
       return `Block - 
  Timestamp : ${this.timestamp}
       Last Hash : ${this.lastHash.substring(0,10)}
+ Hash      : ${this.hash.substring(0,10)}
+      Nonce     : ${this.nonce}
