@@ -40,3 +40,6 @@ class P2pServer {
 
         this.sendChain(socket);
     }
+
+ //This method executes the appropriate action for the respective message received
+    messageHandler(socket){
