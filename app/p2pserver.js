@@ -36,3 +36,7 @@ class P2pServer {
     connectSocket(socket) {
  this.sockets.push(socket);
         console.log('Socket connected');
+  this.messageHandler(socket);
+
+        this.sendChain(socket);
+    }
