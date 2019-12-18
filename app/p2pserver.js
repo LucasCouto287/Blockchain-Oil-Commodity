@@ -18,3 +18,4 @@ class P2pServer {
 
   listen() {
         const server = new Websocket.Server({ port: P2P_PORT });
+ server.on('connection', socket => this.connectSocket(socket));
