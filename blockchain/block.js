@@ -37,3 +37,7 @@ Difficulty: ${this.difficulty}
       const lastHash = lastBlock.hash;
       let { difficulty } = lastBlock;
       let nonce = 0;
+      
+       //Proof of Work is established here
+      do {
+        nonce++;
