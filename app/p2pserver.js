@@ -68,3 +68,7 @@ class P2pServer {
     }
  sendTransaction(socket, transaction){
         socket.send(JSON.stringify({
+    type: MESSAGE_TYPES.transaction,
+            transaction
+        }));
+    }
