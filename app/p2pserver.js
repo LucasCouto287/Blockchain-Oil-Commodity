@@ -9,3 +9,5 @@ const MESSAGE_TYPES = {
 transaction: "TRANSACTION",
     clear_transactions: "CLEAR_TRANSACTIONS"
 }
+class P2pServer { 
+    constructor(blockchain, transactionPool){
