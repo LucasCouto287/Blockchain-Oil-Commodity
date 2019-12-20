@@ -61,3 +61,6 @@ return ChainUtil.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toS
  static adjustDifficulty(lastBlock, currentTime) {
  let { difficulty } = lastBlock; 
  difficulty = lastBlock.timestamp + MINE_RATE > currentTime ? difficulty + 1 : difficulty - 1;
+   return difficulty;
+  }
+}
