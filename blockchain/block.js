@@ -64,3 +64,5 @@ return ChainUtil.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toS
    return difficulty;
   }
 }
+
+module.exports = Block; 
