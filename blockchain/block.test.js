@@ -21,6 +21,7 @@ data = 'bar';
 it('generates a hash that matches the difficulty', () => {
         expect(block.hash.substring(0, block.difficulty)).toEqual('0'.repeat(block.difficulty));
     });
+ 
 it('lowers the difficulty for slowly mined blocs', () => {
         expect(Block.adjustDifficulty(block, block.timestamp+360000)).toEqual(block.difficulty-1);
     });
