@@ -58,3 +58,4 @@ return ChainUtil.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toS
 
   //This method checks the timestamp from the previous block to see if the time passed is greater than or less than the mine rate
   //and then accordingly decreases or increases the difficulty
+ static adjustDifficulty(lastBlock, currentTime) {
