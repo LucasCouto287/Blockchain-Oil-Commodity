@@ -53,3 +53,5 @@ return ChainUtil.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toS
 
   static blockHash(block) {
     const {timestamp, lastHash, data, nonce, difficulty} = block;
+ return Block.hash(timestamp, lastHash, data, nonce, difficulty);
+  }
