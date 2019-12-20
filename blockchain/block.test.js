@@ -28,4 +28,5 @@ it('lowers the difficulty for slowly mined blocs', () => {
 it('raises the difficulty for quickly mined blocs', () => {
         expect(Block.adjustDifficulty(block, block.timestamp+1)).toEqual(block.difficulty+1);
     });
+    
 })
