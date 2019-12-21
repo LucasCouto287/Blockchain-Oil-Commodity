@@ -27,3 +27,4 @@ const block = chain[i];
         }
     }
 
+replaceChain(newChain) {
