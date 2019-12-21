@@ -35,3 +35,5 @@ replaceChain(newChain) {
             console.log('Received chain is not valid');
             return;
         }
+ console.log('Replacing blockchain with the new chain.');
+        this.chain = newChain;
