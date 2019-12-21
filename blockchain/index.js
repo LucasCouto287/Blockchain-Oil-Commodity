@@ -28,3 +28,6 @@ const block = chain[i];
     }
 
 replaceChain(newChain) {
+ if(newChain.length <= this.chain.length){
+            console.log('Received chain is not longer than the current chain');
+            return;
