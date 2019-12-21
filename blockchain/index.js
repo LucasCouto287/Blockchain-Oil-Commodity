@@ -37,3 +37,7 @@ replaceChain(newChain) {
         }
  console.log('Replacing blockchain with the new chain.');
         this.chain = newChain;
+  }
+}
+
+module.exports = Blockchain;
