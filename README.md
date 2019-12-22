@@ -18,4 +18,4 @@ This is a blockchain application for a commodity based coin, which in this case 
 > full blockchain replication among all the clients
 
 
-## More Read.me to come
+### More Read.me to come
