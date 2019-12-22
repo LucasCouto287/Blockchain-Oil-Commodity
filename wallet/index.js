@@ -82,5 +82,7 @@ return transaction;
     } 
 }
     
+module.exports = Wallet;
+
     
     
