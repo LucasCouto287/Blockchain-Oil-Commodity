@@ -50,7 +50,10 @@ return transaction;
         let startTime = 0;
     
     
-    
+     if(walletInputTs.length >  0){
+            const recentInputT = walletInputTs.reduce(
+                (prev,current) => prev.input.timestamp > current.input.timestamp ? prev:current
+            );
     
     
     
