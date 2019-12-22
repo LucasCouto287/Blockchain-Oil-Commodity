@@ -68,7 +68,13 @@ return transaction;
                         balance += output.amount;
     
     
-    
+                        }
+                });
+            }
+        });
+        return balance;
+    }
+
     
     
     
