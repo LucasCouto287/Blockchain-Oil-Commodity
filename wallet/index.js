@@ -28,3 +28,6 @@ createTransaction(recipient, amount,blockchain, transactionPool) {
             return;
         }
  let transaction = transactionPool.existingTransaction(this.publicKey);
+if (transaction) {
+            transaction.update(this, recipient, amount);
+        } else {
