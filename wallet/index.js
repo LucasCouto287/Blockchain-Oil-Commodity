@@ -39,7 +39,11 @@ return transaction;
 
     calculateBalance(blockchain) {
     
-    
+    let balance = this.balance;
+        let transactions = [];
+        blockchain.chain.forEach(block => block.data.forEach(transaction => {
+            transactions.push(transaction);
+        }));
     
     
     
