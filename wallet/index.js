@@ -45,6 +45,9 @@ return transaction;
             transactions.push(transaction);
         }));
     
+        const walletInputTs = transactions
+        .filter(transaction => transaction.input.address === this.publicKey);
+        let startTime = 0;
     
     
     
