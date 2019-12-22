@@ -55,7 +55,9 @@ return transaction;
                 (prev,current) => prev.input.timestamp > current.input.timestamp ? prev:current
             );
     
-    
+         balance = recentInputT.outputs.find(output => output.address === this.publicKey).amount;
+            startTime = recentInputT.input.timestamp;
+        }
     
     
     
