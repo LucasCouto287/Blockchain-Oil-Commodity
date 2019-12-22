@@ -27,3 +27,4 @@ createTransaction(recipient, amount,blockchain, transactionPool) {
             console.log(`Amount: ${amount} exceeds current balance: ${this.balance}`);
             return;
         }
+ let transaction = transactionPool.existingTransaction(this.publicKey);
