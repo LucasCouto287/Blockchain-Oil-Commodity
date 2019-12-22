@@ -36,3 +36,24 @@ if (transaction) {
         }
 return transaction;
     }
+
+    calculateBalance(blockchain) {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
