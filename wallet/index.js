@@ -8,3 +8,5 @@ class Wallet {
         this.keyPair = ChainUtil.genKeyPair(); 
         this.publicKey = this.keyPair.getPublic().encode('hex'); 
     }
+    
+     toString() {
