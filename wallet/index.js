@@ -14,6 +14,10 @@ class Wallet {
         publicKey: ${this.publicKey.toString()}
         balance: ${this.balance}`
     }
-  sign(dataHash) {
+
+    sign(dataHash) {
         return this.keyPair.sign(dataHash);
     }
+    
+createTransaction(recipient, amount,blockchain, transactionPool) {
+        this.balance = this.calculateBalance(blockchain);
