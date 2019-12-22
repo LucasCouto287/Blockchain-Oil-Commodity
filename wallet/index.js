@@ -31,3 +31,6 @@ createTransaction(recipient, amount,blockchain, transactionPool) {
 if (transaction) {
             transaction.update(this, recipient, amount);
         } else {
+ transaction = Transaction.newTransaction(this, recipient, amount);
+            transactionPool.updateOrAddTransaction(transaction);
+        }
