@@ -14,3 +14,4 @@ describe('Wallet', () => {
   });
 
     describe('creating a transaction', () => {
+let transaction, sendAmount, recipient;
