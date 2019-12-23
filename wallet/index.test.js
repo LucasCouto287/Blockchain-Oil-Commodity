@@ -8,3 +8,7 @@ describe('Wallet', () => {
 
   
   beforeEach(() => {
+ wallet = new Wallet();
+    tp = new TransactionPool();
+    bc = new Blockchain();
+  });
