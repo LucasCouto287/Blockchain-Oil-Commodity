@@ -5,3 +5,6 @@ const { INITIAL_BALANCE } = require('../config');
 
 describe('Wallet', () => {
   let wallet, tp, bc;
+
+  
+  beforeEach(() => {
