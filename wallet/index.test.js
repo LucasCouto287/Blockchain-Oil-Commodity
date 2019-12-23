@@ -12,3 +12,5 @@ describe('Wallet', () => {
     tp = new TransactionPool();
     bc = new Blockchain();
   });
+
+    describe('creating a transaction', () => {
