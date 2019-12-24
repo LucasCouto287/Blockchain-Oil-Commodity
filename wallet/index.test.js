@@ -46,5 +46,6 @@ expect(transaction.outputs.filter(output => output.address === recipient)
       addBalance = 100;
       repeatAdd = 3;
       for (let i=0; i<repeatAdd; i++) {
-        
+        senderWallet.createTransaction(wallet.publicKey, addBalance, bc, tp);
+      }
         
