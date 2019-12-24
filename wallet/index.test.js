@@ -20,3 +20,6 @@ let transaction, sendAmount, recipient;
       recipient = 'r4nd0m-4ddr3s';
       transaction = wallet.createTransaction(recipient, sendAmount, bc, tp);
     });
+
+      describe('and doing the same transaction', () => {
+      beforeEach(() => {
