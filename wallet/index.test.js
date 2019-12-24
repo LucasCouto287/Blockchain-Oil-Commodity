@@ -27,3 +27,6 @@ let transaction, sendAmount, recipient;
       });
 
            it('doubles the `sendAmount` subtracted from the wallet balance', () => {
+expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
+        .toEqual(wallet.balance - sendAmount*2);
+      });
