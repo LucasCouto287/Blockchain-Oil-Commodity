@@ -54,4 +54,4 @@ it('calculates the balance for blockchain transactions matching the recipient', 
       expect(wallet.calculateBalance(bc)).toEqual(INITIAL_BALANCE + (addBalance * repeatAdd));
     });
     
-    it('calculates the balance for blockchain transactions matching the sender', () => 
+    it('calculates the balance for blockchain transactions matching the sender', () => {
