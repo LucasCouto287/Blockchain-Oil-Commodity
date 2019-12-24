@@ -50,4 +50,6 @@ expect(transaction.outputs.filter(output => output.address === recipient)
       }
         bc.addBlock(tp.transactions);
     });
-it('calculates the balance for blockchain transactions matching the recipient', () =>
+it('calculates the balance for blockchain transactions matching the recipient', () => {
+      expect(wallet.calculateBalance(bc)).toEqual(INITIAL_BALANCE + (addBalance * repeatAdd));
+    });
