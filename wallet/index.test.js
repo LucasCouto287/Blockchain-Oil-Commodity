@@ -16,3 +16,7 @@ describe('Wallet', () => {
     describe('creating a transaction', () => {
 let transaction, sendAmount, recipient;
  beforeEach(() => {
+ sendAmount = 50;
+      recipient = 'r4nd0m-4ddr3s';
+      transaction = wallet.createTransaction(recipient, sendAmount, bc, tp);
+    });
