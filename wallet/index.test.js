@@ -30,3 +30,5 @@ let transaction, sendAmount, recipient;
 expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
         .toEqual(wallet.balance - sendAmount*2);
       });
+
+         it('clones the `sendAmount` output for the recipient', () => {
