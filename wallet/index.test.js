@@ -23,3 +23,5 @@ let transaction, sendAmount, recipient;
 
       describe('and doing the same transaction', () => {
       beforeEach(() => {
+        wallet.createTransaction(recipient, sendAmount, bc, tp);
+      });
