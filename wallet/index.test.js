@@ -45,4 +45,6 @@ expect(transaction.outputs.filter(output => output.address === recipient)
       senderWallet = new Wallet();
       addBalance = 100;
       repeatAdd = 3;
-      for (let i=0; i<repeatAdd; i++)
+      for (let i=0; i<repeatAdd; i++) {
+        
+        
