@@ -32,3 +32,4 @@ expect(transaction.outputs.find(output => output.address === wallet.publicKey).a
       });
 
          it('clones the `sendAmount` output for the recipient', () => {
+expect(transaction.outputs.filter(output => output.address === recipient)
