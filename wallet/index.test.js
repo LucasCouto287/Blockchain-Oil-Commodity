@@ -25,3 +25,5 @@ let transaction, sendAmount, recipient;
       beforeEach(() => {
         wallet.createTransaction(recipient, sendAmount, bc, tp);
       });
+
+           it('doubles the `sendAmount` subtracted from the wallet balance', () => {
