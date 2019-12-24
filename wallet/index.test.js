@@ -48,4 +48,5 @@ expect(transaction.outputs.filter(output => output.address === recipient)
       for (let i=0; i<repeatAdd; i++) {
         senderWallet.createTransaction(wallet.publicKey, addBalance, bc, tp);
       }
-        
+        bc.addBlock(tp.transactions);
+    });
