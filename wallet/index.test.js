@@ -39,3 +39,4 @@ expect(transaction.outputs.filter(output => output.address === recipient)
   });
 
   describe('calculating a balance', () => {
+    let addBalance, repeatAdd, senderWallet;
