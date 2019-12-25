@@ -3,7 +3,7 @@ const TransactionPool = require('./transaction-pool');
 const Blockchain = require('../blockchain');
 const {
 	INITIAL_BALANCE
-} = require('../config')
+} = require('../config');
 describe('Wallet', () => {
 			let wallet, tp, bc;
 			beforeEach(() => {
