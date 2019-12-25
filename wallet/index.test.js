@@ -9,7 +9,7 @@ describe('Wallet', () => {
 			beforeEach(() => {
 				wallet = new Wallet();
 				tp = new TransactionPool();
-				bc = new Blockchain();
+				tc = new Blockchain();
 			});
 			describe('creating a transaction', () => {
 				let transaction, sendAmount, recipient;
