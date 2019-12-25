@@ -4,7 +4,7 @@ const Blockchain = require('../blockchain');
 const {
 	INITIAL_BALANCE
 } = require('../config');
-describe('Wallet', () => 
+describe('Wallet', () => {
 			let wallet, tp, bc;
 			beforeEach(() => {
 				wallet = new Wallet();
