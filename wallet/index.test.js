@@ -5,7 +5,7 @@ const {
 	INITIAL_BALANCE
 } = require('../config');
 describe('Wallet', () => {
-			 wallet, tp, bc;
+			let wallet, tp, bc;
 			beforeEach(() => {
 				wallet = new Wallet();
 				tp = new TransactionPool();
