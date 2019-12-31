@@ -31,3 +31,10 @@ class Transaction {
         Transaction.signTransaction(transaction, senderWallet);
         return transaction;
     }
+
+	
+	static newTransaction(senderWallet, recipient, amount) {
+        if (amount > senderWallet.balance){
+            console.log(`Amount: ${amount} exceeds balance.`);
+            return;
+        }
