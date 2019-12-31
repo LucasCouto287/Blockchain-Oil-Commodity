@@ -38,3 +38,9 @@ if(!Transaction.verifyTransaction(transaction)) {
             return transaction;
         });
     }
+ clear() {
+        this.transactions = [];
+    }
+}
+
+module.exports = TransactionPool;
