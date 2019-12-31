@@ -38,3 +38,10 @@ class Transaction {
             console.log(`Amount: ${amount} exceeds balance.`);
             return;
         }
+
+		
+		 return Transaction.transactionWithOutputs(senderWallet, [
+            { amount: senderWallet.balance - amount, address: senderWallet.publicKey },
+            { amount, address: recipient }
+        ]);
+    }
