@@ -32,3 +32,18 @@ describe('TransactionPool', () => {
       tp.clear();
       expect(tp.transactions).toEqual([]);
     });
+describe('mixing valid and corrupt transactions', () => {
+      let validTransactions;
+      
+      beforeEach(() => {
+        validTransactions  = [...tp.transactions];
+        for (let i=0; i<6; i++) {
+          wallet = new Wallet();
+          transaction = wallet.createTransaction('r4nd-4dr355', 30, bc, tp);
+          if (i%2==0) {
+            transaction.input.amount = 99999;
+          } else {
+            validTransactions.push(transaction);
+          }
+        }
+      });
