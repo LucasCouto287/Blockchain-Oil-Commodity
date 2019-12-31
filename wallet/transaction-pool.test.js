@@ -47,3 +47,12 @@ describe('mixing valid and corrupt transactions', () => {
           }
         }
       });
+    it('shows a difference between valid and corrupt transactions', () => {
+        expect(JSON.stringify(tp.transactions)).not.toEqual(JSON.stringify(validTransactions));
+      });
+
+      it('grabs valid transactions', () => {
+        expect(tp.validTransactions()).toEqual(validTransactions);
+      });
+    });
+  });
