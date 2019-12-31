@@ -18,3 +18,9 @@ describe('TransactionPool', () => {
  it('adds a transaction to the pool', () => {
       expect(tp.transactions.find(t => t.id === transaction.id)).toEqual(transaction);
     });
+
+      it('updates a transaction in the pool', () => {
+      const oldTransaction = JSON.stringify(transaction);
+      const newTransaction = transaction.update(wallet, 'foo-4ddr355', 40);
+      tp.updateOrAddTransaction(newTransaction);
+      
