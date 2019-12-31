@@ -30,6 +30,7 @@ describe('Wallet', () => {
 					});
 				});
 			});
+	
 			describe('calculating a balance', () => {
 						let addBalance, repeatAdd, senderWallet;
 						beforeEach(() => {
