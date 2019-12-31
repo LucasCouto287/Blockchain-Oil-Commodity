@@ -22,3 +22,12 @@ class Transaction {
 		Transaction.signTransaction(this, senderWallet);
 		return this;
 	}
+
+	
+	
+    static transactionWithOutputs(senderWallet, outputs) {
+        const transaction = new this();
+        transaction.outputs.push(...outputs);
+        Transaction.signTransaction(transaction, senderWallet);
+        return transaction;
+    }
