@@ -35,3 +35,6 @@ if(!Transaction.verifyTransaction(transaction)) {
                 console.log(`Invalid signature from ${transaction.input.address}`)
                 return;
             }
+            return transaction;
+        });
+    }
