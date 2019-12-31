@@ -15,3 +15,6 @@ describe('TransactionPool', () => {
       transaction = wallet.createTransaction('r4nd-4dr355', 30, bc, tp);
     });
   
+ it('adds a transaction to the pool', () => {
+      expect(tp.transactions.find(t => t.id === transaction.id)).toEqual(transaction);
+    });
