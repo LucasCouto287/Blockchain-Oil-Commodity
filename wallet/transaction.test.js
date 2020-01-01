@@ -54,3 +54,9 @@ describe('and updating a transaction', () => {
       nextRecipient = 'n3xt-4ddr3ss';
       transaction = transaction.update(wallet, nextRecipient, nextAmount);
     });
+
+    
+    it(`subtracts the next amount from the sender's output`, () => {
+      expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
+        .toEqual(wallet.balance - amount - nextAmount);
+    });
