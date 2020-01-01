@@ -60,3 +60,10 @@ describe('and updating a transaction', () => {
       expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
         .toEqual(wallet.balance - amount - nextAmount);
     });
+
+    
+     it('outputs an amount for the next recipient', () => {
+      expect(transaction.outputs.find(output => output.address === nextRecipient).amount)
+        .toEqual(nextAmount);
+    });
+  });
