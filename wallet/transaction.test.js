@@ -13,3 +13,8 @@ describe('Transaction', () => {
         recipient = 'r3cp13nt';
         transaction = Transaction.newTransaction(wallet, recipient, amount);
     });
+
+    it('outputs the `amount` subtracted from the wallet balance', () => {
+        expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
+        .toEqual(wallet.balance - amount);
+    });
