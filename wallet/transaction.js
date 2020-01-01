@@ -64,5 +64,10 @@ transaction.input = {
 	 //This is used by the recipient to verify the transaction
     static verifyTransaction(transaction) {
 	        return ChainUtil.verifySignature(
-
+  transaction.input.address,
+            transaction.input.signature,
+            ChainUtil.hash(transaction.outputs)
+        );
+    }
+}
 	
