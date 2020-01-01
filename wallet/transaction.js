@@ -47,3 +47,4 @@ class Transaction {
     }
 
 	static rewardTransaction(minerWallet, blockchainWallet) {
+        return Transaction.transactionWithOutputs(blockchainWallet, [{
