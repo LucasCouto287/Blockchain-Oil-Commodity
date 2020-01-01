@@ -60,3 +60,8 @@ transaction.input = {
             signature: senderWallet.sign(ChainUtil.hash(transaction.outputs))
         }
     }
+
+	 //This is used by the recipient to verify the transaction
+    static verifyTransaction(transaction) {
+	
+	
