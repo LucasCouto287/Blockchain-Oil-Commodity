@@ -41,3 +41,8 @@ describe('Transaction', () => {
             amount = 50000;
             transaction = Transaction.newTransaction(wallet, recipient, amount);
         });
+
+         it('does not create the transaction', () => {
+            expect(transaction).toEqual(undefined);
+        });
+    });
