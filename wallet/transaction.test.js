@@ -73,3 +73,5 @@ describe('and updating a transaction', () => {
     beforeEach(() => {
         transaction = Transaction.rewardTransaction(wallet, Wallet.blockchainWallet());
     });
+
+       it(`reward the miner's wallet`, () => {
