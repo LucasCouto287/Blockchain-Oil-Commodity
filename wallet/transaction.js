@@ -55,3 +55,20 @@ class Transaction {
     static signTransaction(transaction, senderWallet) {
 transaction.input = { 
             timestamp: Date.now(),
+     amount: senderWallet.balance,
+            address: senderWallet.publicKey,
+            signature: senderWallet.sign(ChainUtil.hash(transaction.outputs))
+        }
+    }
+
+	 //This is used by the recipient to verify the transaction
+    static verifyTransaction(transaction) {
+	        return ChainUtil.verifySignature(
+  transaction.input.address,
+            transaction.input.signature,
+            ChainUtil.hash(transaction.outputs)
+        );
+    }
+}
+	
+ module.exports = Transaction;
