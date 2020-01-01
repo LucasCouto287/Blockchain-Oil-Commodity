@@ -71,3 +71,4 @@ transaction.input = {
     }
 }
 	
+ module.exports = Transaction;
