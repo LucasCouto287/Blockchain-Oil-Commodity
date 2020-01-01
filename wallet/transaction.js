@@ -53,3 +53,4 @@ class Transaction {
     }
     
     static signTransaction(transaction, senderWallet) {
+transaction.input = { 
