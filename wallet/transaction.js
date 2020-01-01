@@ -45,3 +45,5 @@ class Transaction {
             { amount, address: recipient }
         ]);
     }
+
+	static rewardTransaction(minerWallet, blockchainWallet) {
