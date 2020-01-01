@@ -46,3 +46,11 @@ describe('Transaction', () => {
             expect(transaction).toEqual(undefined);
         });
     });
+   
+describe('and updating a transaction', () => {
+    let nextAmount, nextRecipient;
+    beforeEach(() => {
+      nextAmount = 20;
+      nextRecipient = 'n3xt-4ddr3ss';
+      transaction = transaction.update(wallet, nextRecipient, nextAmount);
+    });
