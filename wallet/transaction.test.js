@@ -18,3 +18,8 @@ describe('Transaction', () => {
         expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
         .toEqual(wallet.balance - amount);
     });
+
+       it('outputs the `amount` added to the recipient', () => {
+        expect(transaction.outputs.find(output => output.address === recipient).amount)
+        .toEqual(amount);
+    });
