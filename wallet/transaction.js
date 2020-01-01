@@ -52,3 +52,4 @@ class Transaction {
         }]);
     }
     
+    static signTransaction(transaction, senderWallet) {
