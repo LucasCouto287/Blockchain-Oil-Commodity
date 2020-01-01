@@ -70,3 +70,4 @@ describe('and updating a transaction', () => {
 
     
       describe('creating a reward transaction', () => {
+    beforeEach(() => {
