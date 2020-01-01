@@ -67,3 +67,6 @@ describe('and updating a transaction', () => {
         .toEqual(nextAmount);
     });
   });
+
+    
+      describe('creating a reward transaction', () => {
